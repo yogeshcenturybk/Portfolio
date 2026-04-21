@@ -485,6 +485,7 @@ html[data-theme="light"] .cta-code-block { background: var(--bg-alt); }
   align-items: center; justify-content: center;
   animation: spin-reverse 8s linear infinite;
   gap: 4px;
+  overflow: hidden; 
 }
 @keyframes spin-reverse { to { transform: rotate(-360deg); } }
 .avatar-initials { font-size: 2.8rem; font-weight: 800; color: var(--blue); line-height: 1; }
@@ -886,4 +887,10 @@ a.con-card:hover .con-val { color: var(--blue); }
   .btn { width: 100%; justify-content: center; }
   .about-sidebar { flex-direction: column; align-items: center; }
   .hero-role { justify-content: center; }
+}
+
+.profile-photo {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
